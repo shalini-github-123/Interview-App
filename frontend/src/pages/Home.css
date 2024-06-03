@@ -1,0 +1,39 @@
+/* App.css */
+.menu-icon {
+    position: relative;
+    top: 3px;
+    left: -3px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Ensure menu icon is above other elements */
+  }
+  
+  .hnavbar {
+    z-index: -1;
+  }
+
+  @media (max-width: 480px) {
+    .menu-icon {
+        display: block;
+    }
+    .vertical-navbar {
+        /* Your existing styles for vertical navbar */
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        bottom: 0;
+        width: 500px; /* Adjust width as needed */
+        background-color: #fff;
+        border-right: 1px solid #ccc;
+        transition: transform 0.3s ease;
+        transform: translateX(-100%);
+      }
+      
+      /* Apply styles when the navbar is visible */
+      .vertical-navbar.visible {
+        transform: translateX(0);
+      }
+  }
+
+  

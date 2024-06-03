@@ -1,0 +1,102 @@
+/* HorizontalNavbar.css */
+.horizontal-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d78b4d;
+  height: 7vh;
+  width: 80vw;
+  padding: 15px 0;
+  position: fixed;
+  left: 20vw;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  font-weight: bold;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.navbar-right {
+  background-color: rgba(238, 238, 238, 0.6);
+  margin-right: 50px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right:hover {
+  background-color: rgba(184, 183, 183, 0.6);
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .horizontal-navbar {
+    width: 70vw;
+    left: 30vw;
+    /* padding: 10px 0; */
+  }
+}
+@media (max-width: 880px) {
+  .horizontal-navbar {
+    width: 65vw;
+    left: 35vw;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .horizontal-navbar {
+    width: 55vw;
+    left: 45vw;
+    padding: 10px 0;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 580px) {
+  .horizontal-navbar {
+    width: 50vw;
+    left: 50vw;
+    padding: 10px 0;
+  }
+
+  .navbar-left {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .navbar-right {
+    margin-right: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal-navbar {
+    width: 100vw;
+    left: 0;
+    padding: 10px 0;
+  }
+  .navbar-left {
+    font-size: 18px;
+    margin-left: 35px;
+  }
+
+  .navbar-right {
+    margin-right: 10px;
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}

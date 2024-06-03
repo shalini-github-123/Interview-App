@@ -1,0 +1,44 @@
+.add-recruiter-container {
+   padding-left: 30vw;
+   padding-top: 20vh;
+}
+
+.add-recruiter-input {
+    width: 40vw;
+}
+
+.back-button {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.back-button-container:hover {
+    background-color: #bbb;
+    border-radius: 30px;
+    width: 45px;
+    text-align: center;
+    align-content: center;
+}
+
+@media (max-width: 600px) { 
+    .add-recruiter-container {
+        padding-left: 20vw;
+        padding-top: 20vh;
+     }
+     
+     .add-recruiter-input {
+         width: 60vw;
+     }
+}
+
+
+@media (max-width: 480px) { 
+    .add-recruiter-container {
+        padding-left: 10vw;
+        padding-top: 20vh;
+     }
+     
+     .add-recruiter-input {
+         width: 80vw;
+     }
+}
