@@ -19,6 +19,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Route handler for the root URL
+app.get('/', (req, res) => {
+  res.send('server is running');
+});
+
 // User routes
 app.use('/api/user', userRoutes);
 
