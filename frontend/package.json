@@ -1,5 +1,4 @@
 {
-  "proxy": "https://interview-app-m1lr.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
